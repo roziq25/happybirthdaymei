@@ -133,7 +133,7 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);ove
   </section>
 
   <section class="video-section reveal">
-    <span class="section-label">Pesan Spesial</span>
+    <span class="section-label">Deeply Love</span>
     <div class="video-frame">
       <video src="images/video.mp4" controls autoplay muted playsinline>
         <div class="play-icon">
@@ -303,7 +303,7 @@ function setNum(id,val){const el=document.getElementById(id);if(el.textContent!=
 updateCountdown();setInterval(updateCountdown,1000);
 
 // GALLERY
-const TOTAL=10;let cur=0,timer;
+const TOTAL=8;let cur=0,timer;
 function buildDots(){
   const dots=document.getElementById('galleryDots');
   for(let i=0;i<TOTAL;i++){const d=document.createElement('div');d.className='gallery-dot'+(i===0?' active':'');d.onclick=()=>{clearInterval(timer);goTo(i);startTimer()};dots.appendChild(d);}
